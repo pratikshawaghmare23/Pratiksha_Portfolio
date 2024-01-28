@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Pratiksha</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Pratiksha</span><br> Web Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="data:image/png;base64,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"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="data:image/png;base64,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" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Pratiksha</h2>
+                        <p class="about__text">Motivated and detail-oriented professional with a strong foundation in programming and  problem-solving. Possesses excellent communication and interpersonal skills, coupled with a quick learning ability.  To become a successful expert in the field of Information Technology by channelizing my 
+                            technical knowledge and skills to ensure personal and professional growth and to 
+                            contribute to the prosperity of the organization.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Demonstrates expertise in OOP, data structures, and front-end technologies. Proven track record in logical and designing concepts</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Bootstrap</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Pratiksha</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169;  All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
